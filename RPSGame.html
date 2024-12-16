@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <title>Rock-Paper-Scissors!</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Images/rock-paper-scissors.png">
+  </head>
+  <body>
+    <div id="rps-game">
+      <h1>Rock-Paper-Scissors!</h1>
+      <!-- choices for the game of RPS you can choose between rock paper and scissors-->
+      <div id="choices">
+        <button type="button" id="rock" aria-label="rock button" role="button">
+          <img
+            src="Assets/Images/fist.png"
+            title="fist icons"
+            alt="Fist icons created by Cuputo - Flaticon"
+          />Rock
+        </button>
+        <button type="button" id="paper" aria-label="paper button" role="button">
+          <img
+            src="Assets/Images/hand-paper.png"
+            alt="Hand paper icon By iconading - Flaticon"
+          />
+          Paper
+        </button>
+        <button type ="button" id="scissors" aria-label="scissors button" role="button">
+          <img
+            src="Assets/Images/scissors.png"
+            alt="Rock paper scissors icons created by Cap Cool - Flaticon"
+          />Scissors
+        </button>
+      </div>
+      <!-- displays who won the game -->
+      <div id="result"></div>
+      <!--score display-->
+      <div id="scoreboard">
+        <div id="player-score">Player Score: 0</div>
+        <div id="computer-score">Computer Score: 0</div>
+        <div id="tie-game">Ties: 0</div>
+      </div>
+      <!-- Adding round display-->
+      <div id="game-info">
+        <div id="round">Round: 1 of 5</div>
+        <div id="r-number"></div>
+      </div>
+      </div>
+    </div>
+    <div class="htp">
+      <h2>How to play:</h2>
+      <p>Click either rock, paper of scissors and the computer will then randomly select an option as well.
+        <br> Play for 5 rounds to see who wins!</p>
+    </div>
+    <div class="footer">
+      <p>Scissors icons created by Cap Cool - Flaticon
+      <br>Hand paper icon By iconading - Flaticon
+      <br>Fist icons by Cuputo - Flaticon</p>
+    </div>
+
+    <script src="Assets/JavaScript/script.js"></script>
+  </body>
+</html>
