@@ -8,6 +8,7 @@ body {
   margin: 0;
   background: linear-gradient(to right, #56ab2f, #a8e063);
   color: #333;
+  overflow: auto;
 }
 
 #rps-game {
