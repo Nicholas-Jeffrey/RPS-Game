@@ -7,7 +7,7 @@ body {
   height: 100vh;
   margin: 0;
   background: linear-gradient(to right, #56ab2f, #a8e063);
-  color: #333;
+  color: black;
   overflow: auto;
   font-size: large;
 }
@@ -41,8 +41,9 @@ body {
 
 #choices button:hover,
 #choices button:focus {
-  background-color: #0056b3;
+  background-color: #a3eaf8;
   cursor: pointer;
+  text-decoration: underline;
 }
 /* styling for results section */
 #result {

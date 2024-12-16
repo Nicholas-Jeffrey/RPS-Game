@@ -32,11 +32,6 @@ const tieScoreDisplay = document.getElementById("tie-game");
 function playRound(playerChoice) {
   const choices = ["rock", "paper", "scissors"];
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-  // this will determin what round is it and the winner and updates scores accordingly
-  if (currentRound <= totalRounds) {
-    roundDisplay.textContent = `Round: ${currentRound} of ${totalRounds}`;
-    currentRound++;
-  }
   //This will tell who won and show it on a display. if player choices matches the computer it's a draw
   if (playerChoice === computerChoice) {
     resultDisplay.textContent = "It's a draw!";
@@ -52,6 +47,14 @@ function playRound(playerChoice) {
     resultDisplay.textContent = "Computer wins!";
     computerScore++; //increase computer score if win
   }
+  // Calculate remaining rounds
+  let roundsLeft = totalRounds - currentRound;
+
+  // Display current round and remaining rounds
+  roundDisplay.textContent = `Round: ${currentRound} of ${totalRounds} (Rounds left: ${roundsLeft})`;
+
+  // Increment the round counter
+  currentRound++;
 
   // updating score display
   playerScoreDisplay.textContent = `Player Score: ${playerScore}`;
@@ -104,7 +107,7 @@ function playRound(playerChoice) {
     }
     //adding another section to html doc for final message and restart button
     gameConclusion.innerHTML = `<h2>Game Over</h2> 
-    <p>${finalMessage}</p>
+    <h3>${finalMessage}</h3>
   <p>Final Score - You: ${playerScore} | Computer: ${computerScore}</p>
   <button id="restart-btn">Restart Game</button>`;
 
@@ -157,13 +160,3 @@ function restartGame() {
   document.getElementById("choices").style.display = "";
   resultDisplay.textContent = "Choose your weapon!";
 }
-
-//accessibility text contrast feature variables
-/*let textColor = document.getElementById("text-color");
-let bgColor = document.getElementById("bg-color").value;
-
-bgColor.addEventListener("onchange");
-
-function setBgcolor() {
-  document.body.style.backgroundColor = bgColor;
-}*/
