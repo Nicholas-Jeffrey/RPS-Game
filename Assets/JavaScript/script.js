@@ -47,6 +47,8 @@ function playRound(playerChoice) {
     ? ["rock", "paper", "scissors", "lizard", "spock"]
     : ["rock", "paper", "scissors"];
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  const computerChoiceDisplay = document.getElementById("computer-choice");
+  computerChoiceDisplay.textContent = `Computer chose: ${computerChoice}`;
 
   // Determine the result based on the player's and computer's choices
   if (playerChoice === computerChoice) {
