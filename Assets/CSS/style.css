@@ -123,3 +123,13 @@ tr:hover {
   margin: 5px;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 800px) {
+  body {
+    height: fit-content;
+    display: block;
+  }
+  .footer {
+    display: block;
+  }
+}
