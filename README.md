@@ -1,6 +1,5 @@
 # RPS-Game
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience.
 RPS-Game is a site that serves to be an interactive outlet for people who like a game of rock paper scissors! This site is targeted towards people who like random games and unique ways to make descisions or ways to spend some downtime. It is useful to demonstrate the abilities of javascript to build games and responsive websites.
 
 ![Responsice Mockup](https://github.com/Nicholas-Jeffrey/Rps-game/blob/main/Assets/Images/Screenshot%202024-12-20%20030440.png)
